@@ -8,7 +8,7 @@ const UserModel = require("./models/Users")
 const app = express()
 app.use(cors({
     origin : ["https://todo-frontend-pied-iota.vercel.app"],
-    methods:["POST","GET"],
+    methods:["POST","GET","PUT","DELETE"],
     credentials:true
 }));
 app.use(express.json())
