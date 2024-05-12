@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 export default function Users() {
     const[users,setUsers] = useState([])
+    axios.defaults.withCredentials = true;
 
     useEffect(()=>{
         axios.get('https://todo-nine-lovat.vercel.app/')
