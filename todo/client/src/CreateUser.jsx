@@ -7,7 +7,7 @@ function CreateUser() {
     const[email,setEmail] = useState()
     const[age, setAge] = useState()
     const Navigate = useNavigate()
-
+    axios.defaults.withCredentials = true;
     const Submit = (e) =>{
         e.preventDefault();
         axios.post('https://todo-nine-lovat.vercel.app/createUser', {name, email, age})
