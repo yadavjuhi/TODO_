@@ -10,7 +10,7 @@ function CreateUser() {
 
     const Submit = (e) =>{
         e.preventDefault();
-        axios.post('http://127.0.0.1:3001/createUser', {name, email, age})
+        axios.post('todo-nine-lovat.vercel.app/createUser', {name, email, age})
         .then(result => Navigate('/'))
         .catch(err => console.log(err))
     }   
