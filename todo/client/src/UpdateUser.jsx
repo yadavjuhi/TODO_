@@ -10,7 +10,7 @@ import axios from 'axios'
     const Navigate = useNavigate()
 
     useEffect(()=>{
-        axios.get('todo-nine-lovat.vercel.app/getUser/'+id)
+        axios.get('https://todo-nine-lovat.vercel.app/getUser/'+id)
         .then(result => {
             console.log(result)
             setName(result.data.name)
@@ -22,7 +22,7 @@ import axios from 'axios'
 
     const Update = (e) =>{
         e.preventDefault();
-        axios.put('todo-nine-lovat.vercel.app/updateUser/'+id, {name, email, age})
+        axios.put('https://todo-nine-lovat.vercel.app/updateUser/'+id, {name, email, age})
         .then(result => Navigate('/'))
         .catch(err => console.log(err))
     } 
