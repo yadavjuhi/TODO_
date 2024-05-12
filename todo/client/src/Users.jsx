@@ -8,7 +8,7 @@ export default function Users() {
     const[users,setUsers] = useState([])
 
     useEffect(()=>{
-        axios.get('http://127.0.0.1:3001')
+        axios.get('todo-nine-lovat.vercel.app')
         .then(result => setUsers(result.data))
         .catch(err => console.log(err))
     },[])
