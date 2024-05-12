@@ -8,6 +8,7 @@ import axios from 'axios'
     const[email,setEmail] = useState()
     const[age, setAge] = useState()
     const Navigate = useNavigate()
+    axios.defaults.withCredentials = true;
 
     useEffect(()=>{
         axios.get('https://todo-nine-lovat.vercel.app/getUser/'+id)
