@@ -14,7 +14,7 @@ export default function Users() {
     },[])
 
     const handleDelete = (id) =>{
-        axios.delete("http://127.0.0.1:3001/deleteUser/"+id)
+        axios.delete("todo-nine-lovat.vercel.app/deleteUser/"+id)
         .then(res=>{
             console.log(res)
             window.location.reload()
